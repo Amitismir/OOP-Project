@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="417.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.tableController">
+    <children>
+        <ImageView fitHeight="425.0" fitWidth="655.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true">
+            <image>
+                <Image url="@../Media/table.jpg" />
+            </image></ImageView>
+        <TableView fx:id="table" layoutX="16.0" layoutY="52.0" prefHeight="287.0" prefWidth="624.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" stylesheets="@table style.css">
+            <columns>
+                <TableColumn fx:id="no" prefWidth="56.799991607666016" text="No" />
+                <TableColumn fx:id="state" prefWidth="58.39996337890625" text="State" />
+                <TableColumn fx:id="outcome" prefWidth="112.0" text="Outcome" />
+                <TableColumn fx:id="opp" prefWidth="88.79997253417969" text="Opponent" />
+                <TableColumn fx:id="oppLevel" prefWidth="95.20001220703125" text="Opponent Level" />
+                <TableColumn fx:id="time" prefWidth="216.0" text="Time" />
+            </columns>
+        </TableView>
+        <Button fx:id="next" layoutX="587.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#onNextButtonAction" text="NEXT">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="prev" layoutX="532.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#onPrevButtonAction" text="PREV.">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+            </font></Button>
+        <TextField fx:id="goToPage" layoutX="246.0" layoutY="396.0" prefHeight="26.0" prefWidth="102.0" promptText="GO TO PAGE...">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+            </font>
+        </TextField>
+        <Button fx:id="main" layoutX="16.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#onMainButtonAction" text="Main">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+            </font></Button>
+        <CheckBox fx:id="checkBox" layoutX="358.0" layoutY="399.0" mnemonicParsing="false" onMouseClicked="#onCheckBoxAction" prefHeight="18.0" prefWidth="15.0" />
+    </children>
+</AnchorPane>

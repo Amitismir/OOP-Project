@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="807.0" prefWidth="1194.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SecuityController">
+   <children>
+      <ImageView fitHeight="819.0" fitWidth="1213.0" layoutX="-4.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/security.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="securityqField" layoutX="484.0" layoutY="447.0" prefHeight="38.0" prefWidth="260.0" promptText="Enter the q number">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="securityaField" layoutX="484.0" layoutY="508.0" prefHeight="38.0" prefWidth="260.0" promptText="Enter your answer">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></TextField>
+      <Button fx:id="ok" layoutX="578.0" layoutY="595.0" mnemonicParsing="false" onAction="#handlesecuritybutton" prefHeight="28.0" prefWidth="54.0" style="-fx-background-color: #221f34; -fx-border-color: #cb63ab; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 2;" text="OK" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

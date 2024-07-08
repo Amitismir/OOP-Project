@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="753.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainMenuController">
+   <children>
+      <ImageView fitHeight="820.0" fitWidth="1071.0" layoutX="-124.0" layoutY="-55.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Media/main.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="playbutton" layoutX="331.0" layoutY="239.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="268.0" style="-fx-background-color: #221f34; -fx-border-radius: 5; -fx-border-color: #cb63ab; -fx-border-width: 2;" text="Play" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="gamehistorybutton" layoutX="331.0" layoutY="298.0" mnemonicParsing="false" onMouseClicked="#gameHistoryClick" prefHeight="39.0" prefWidth="268.0" style="-fx-background-color: #221f34; -fx-border-radius: 5; -fx-border-color: #cb63ab;" text="Game History" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="shopbutton" layoutX="331.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#gotoshop" prefHeight="39.0" prefWidth="268.0" style="-fx-background-color: #221f34; -fx-border-radius: 5; -fx-border-color: #cb63ab; -fx-border-width: 2;" text="Shop" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="editbutton" layoutX="331.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#edit" prefHeight="39.0" prefWidth="268.0" style="-fx-background-color: #221f34; -fx-border-radius: 5; -fx-border-color: #cb63ab; -fx-border-width: 2;" text="Edit Profile" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="settingbutton" layoutX="331.0" layoutY="465.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="268.0" style="-fx-background-color: #221f34; -fx-border-radius: 5; -fx-border-color: #cb63ab; -fx-border-width: 2;" text="Setting" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="logoutbutton" layoutX="331.0" layoutY="521.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="39.0" prefWidth="268.0" style="-fx-background-color: #221f34; -fx-border-radius: 5; -fx-border-color: #cb63ab; -fx-border-width: 2;" text="log out" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font></Button>
+      <Label fx:id="userInfoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="324.0" layoutY="27.0" prefHeight="183.0" prefWidth="252.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" textFill="#cdf9fd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="287.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="58.0" layoutX="274.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="85.0" layoutX="268.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/level.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="58.0" layoutX="274.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/xp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

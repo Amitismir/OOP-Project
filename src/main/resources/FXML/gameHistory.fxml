@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.gameHistoryController">
+    <children>
+        <ImageView fitHeight="402.0" fitWidth="608.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Media/gameHistory.png" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" prefHeight="62.0" prefWidth="402.0" text="GAME HISTORY" textFill="#181616">
+            <font>
+                <Font name="Arabic Typesetting" size="64.0" />
+            </font></Label>
+        <Label layoutX="29.0" layoutY="86.0" prefHeight="59.0" prefWidth="349.0" text="Please choose a sorting method:" textFill="#181616" underline="true">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="sorting" layoutX="86.0" layoutY="174.0" prefHeight="26.0" prefWidth="221.0" style="-fx-background-color: #fcbe43;" />
+        <ChoiceBox fx:id="ac_dc" layoutX="86.0" layoutY="234.0" prefHeight="26.0" prefWidth="221.0" style="-fx-background-color: #fcbe43;" />
+    </children>
+</AnchorPane>

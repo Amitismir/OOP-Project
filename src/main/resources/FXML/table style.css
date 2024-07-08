@@ -1,0 +1,6 @@
+.tree-table-column {
+    -fx-text-fill: #1b465f;
+}
+.tree-table-column .label {
+    -fx-text-fill: rgba(253, 255, 0, 1);
+}
