@@ -8,17 +8,18 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 
-public class gameHistory extends Application {
+public class charcater extends Application {
     private static Stage stage;
     public static void main(String[] args) {
         launch(args);
     }
+
     @Override
     public void start(Stage stage) throws Exception {
         debutantMenu.stage = stage;
-        URL url= debutantMenu.class.getResource("/FXML/gameHistory.fxml");
-        AnchorPane root = FXMLLoader.load(url);
-        Scene scene = new Scene(root);
+        URL url= debutantMenu.class.getResource("/FXML/character.fxml");
+        AnchorPane root= FXMLLoader.load(url);
+        Scene scene =new Scene(root);
         scene.getRoot().requestFocus();
         stage.setScene(scene);
         stage.show();
